@@ -20,8 +20,11 @@ with open(os.path.join(dockerfile_dir_path, "DockerfileTemplate"), "r") as f:
 # RUN useradd -u {your-UID}
 # with the values of your UID
 
-# get the UID
-uid = os.getuid()
+# get the UID (fallback for Windows)
+try:
+    uid = os.getuid()
+except AttributeError:
+    uid = 1000
 
 # replace the placeholders
 content_of_dockerfile = content_of_dockerfile.replace("{your-UID}", str(uid))
