@@ -1,0 +1,9 @@
+---
+sourceLocationPrefix: "/home/codeql/project/data/datasets/ConstClasBit"
+baselineLinesOfCode: 20
+unicodeNewlines: false
+columnKind: "utf32"
+primaryLanguage: "python"
+creationMetadata:
+  cliVersion: "2.11.2"
+  creationTime: "2026-05-07T11:10:24.473288591Z"

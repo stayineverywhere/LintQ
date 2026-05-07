@@ -1,0 +1,88 @@
+[2026-05-07 10:59:47] This is codeql execute queries -J-Xmx964M --off-heap-ram=964 --verbosity=progress --logdir=/home/codeql/project/data/ConstClasBit_db/log --evaluator-log-level=5 --threads=10 --insecurely-execute-ml-model-checksums= --warnings=show --qlconfig-file=/home/codeql/project/qlconfig.yml --rerun --output=/home/codeql/project/data/ConstClasBit_db/results -- /home/codeql/project/data/ConstClasBit_db/db-python /home/codeql/project/LintQ-all.qls
+[2026-05-07 10:59:47] Calling plumbing command: codeql resolve queries --qlconfig-file=/home/codeql/project/qlconfig.yml --format=json -- /home/codeql/project/LintQ-all.qls
+[2026-05-07 10:59:47] [DETAILS] resolve queries> Expanding query suite /home/codeql/project/LintQ-all.qls.
+[2026-05-07 10:59:48] [PROGRESS] resolve queries> Recording pack reference mattepalte/qlint at /usr/local/codeql-home/LintQ/codeql/src.
+[2026-05-07 10:59:48] [SPAMMIER] resolve queries> Resolution instruction: qlpack mattepalte/qlint
+[2026-05-07 10:59:48] [SPAMMY] resolve queries> Scanning for QL files at /usr/local/codeql-home/LintQ/codeql/src.
+[2026-05-07 10:59:48] [SPAMMY] resolve queries> Found 31 QL files in /usr/local/codeql-home/LintQ/codeql/src.
+[2026-05-07 10:59:48] [SPAMMIER] resolve queries> Resolution instruction: include.
+[2026-05-07 10:59:48] [SPAMMY] resolve queries> Query Filter: Implicitly candidating /usr/local/codeql-home/LintQ/codeql/src/Backend/InitWithoutTranspilation.ql.
+[2026-05-07 10:59:48] [SPAMMY] resolve queries> Query Filter: Implicitly candidating /usr/local/codeql-home/LintQ/codeql/src/Backend/MeasWithStatevector.ql.
+[2026-05-07 10:59:48] [SPAMMY] resolve queries> Query Filter: Implicitly candidating /usr/local/codeql-home/LintQ/codeql/src/Extra/DeprecatedCircuitMethod.ql.
+[2026-05-07 10:59:48] [SPAMMY] resolve queries> Query Filter: Implicitly candidating /usr/local/codeql-home/LintQ/codeql/src/Extra/DeprecatedIdentity.ql.
+[2026-05-07 10:59:48] [SPAMMY] resolve queries> Query Filter: Implicitly candidating /usr/local/codeql-home/LintQ/codeql/src/Extra/ExecuteWithSeed.ql.
+[2026-05-07 10:59:48] [SPAMMY] resolve queries> Query Filter: Implicitly candidating /usr/local/codeql-home/LintQ/codeql/src/Extra/GhostQASMImport.ql.
+[2026-05-07 10:59:48] [SPAMMY] resolve queries> Query Filter: Implicitly candidating /usr/local/codeql-home/LintQ/codeql/src/Extra/ImproperDraw.ql.
+[2026-05-07 10:59:48] [SPAMMY] resolve queries> Query Filter: Implicitly candidating /usr/local/codeql-home/LintQ/codeql/src/Extra/MultipleSubmission.ql.
+[2026-05-07 10:59:48] [SPAMMY] resolve queries> Query Filter: Implicitly candidating /usr/local/codeql-home/LintQ/codeql/src/Extra/SimulatorSizeOverflow.ql.
+[2026-05-07 10:59:48] [SPAMMY] resolve queries> Query Filter: Implicitly candidating /usr/local/codeql-home/LintQ/codeql/src/Extra/SuperfluousOp.ql.
+[2026-05-07 10:59:48] [SPAMMY] resolve queries> Query Filter: Implicitly candidating /usr/local/codeql-home/LintQ/codeql/src/Extra/SuperfluousOpPrecise.ql.
+[2026-05-07 10:59:48] [SPAMMY] resolve queries> Query Filter: Implicitly candidating /usr/local/codeql-home/LintQ/codeql/src/Extra/TranspileWithoutLayout.ql.
+[2026-05-07 10:59:48] [SPAMMY] resolve queries> Query Filter: Implicitly candidating /usr/local/codeql-home/LintQ/codeql/src/Interconnection/GhostComposition.ql.
+[2026-05-07 10:59:48] [SPAMMY] resolve queries> Query Filter: Implicitly candidating /usr/local/codeql-home/LintQ/codeql/src/Interconnection/GhostFromQasm.ql.
+[2026-05-07 10:59:48] [SPAMMY] resolve queries> Query Filter: Implicitly candidating /usr/local/codeql-home/LintQ/codeql/src/Interconnection/IncompatibleComposition.ql.
+[2026-05-07 10:59:48] [SPAMMY] resolve queries> Query Filter: Implicitly candidating /usr/local/codeql-home/LintQ/codeql/src/Interconnection/UngovernedComposition.ql.
+[2026-05-07 10:59:48] [SPAMMY] resolve queries> Query Filter: Implicitly candidating /usr/local/codeql-home/LintQ/codeql/src/Measurement/ConditionalGateWithoutMeas.ql.
+[2026-05-07 10:59:48] [SPAMMY] resolve queries> Query Filter: Implicitly candidating /usr/local/codeql-home/LintQ/codeql/src/Measurement/DoubleMeasurement.ql.
+[2026-05-07 10:59:48] [SPAMMY] resolve queries> Query Filter: Implicitly candidating /usr/local/codeql-home/LintQ/codeql/src/Measurement/MeasureAll.ql.
+[2026-05-07 10:59:48] [SPAMMY] resolve queries> Query Filter: Implicitly candidating /usr/local/codeql-home/LintQ/codeql/src/Measurement/OpAfterMeasurement.ql.
+[2026-05-07 10:59:48] [SPAMMY] resolve queries> Query Filter: Implicitly candidating /usr/local/codeql-home/LintQ/codeql/src/Measurement/OpAfterMeasurementGeneral.ql.
+[2026-05-07 10:59:48] [SPAMMY] resolve queries> Query Filter: Implicitly candidating /usr/local/codeql-home/LintQ/codeql/src/Metrics/CircuitSize.ql.
+[2026-05-07 10:59:48] [SPAMMY] resolve queries> Query Filter: Implicitly candidating /usr/local/codeql-home/LintQ/codeql/src/Optimization/OpAfterOptimization.ql.
+[2026-05-07 10:59:48] [SPAMMY] resolve queries> Query Filter: Implicitly candidating /usr/local/codeql-home/LintQ/codeql/src/Qsmell/NoAlignmentLogicalPhysical.ql.
+[2026-05-07 10:59:48] [SPAMMY] resolve queries> Query Filter: Implicitly candidating /usr/local/codeql-home/LintQ/codeql/src/Qsmell/NonParametrizedCircuit.ql.
+[2026-05-07 10:59:48] [SPAMMY] resolve queries> Query Filter: Implicitly candidating /usr/local/codeql-home/LintQ/codeql/src/Resource/ConstantClassicBit.ql.
+[2026-05-07 10:59:48] [SPAMMY] resolve queries> Query Filter: Implicitly candidating /usr/local/codeql-home/LintQ/codeql/src/Resource/OversizedCircuit.ql.
+[2026-05-07 10:59:48] [SPAMMY] resolve queries> Query Filter: Implicitly candidating /usr/local/codeql-home/LintQ/codeql/src/Resource/UnmeasurableQubits.ql.
+[2026-05-07 10:59:48] [SPAMMY] resolve queries> Query Filter: Implicitly candidating /usr/local/codeql-home/LintQ/codeql/src/Simulation/InvalidPauliErrorSize.ql.
+[2026-05-07 10:59:48] [SPAMMY] resolve queries> Query Filter: Implicitly candidating /usr/local/codeql-home/LintQ/codeql/src/Simulation/InvalidPauliSyntaxError.ql.
+[2026-05-07 10:59:48] [SPAMMY] resolve queries> Query Filter: Implicitly candidating /usr/local/codeql-home/LintQ/codeql/src/Vulnerability/TokenLeakage.ql.
+[2026-05-07 10:59:48] [SPAMMY] resolve queries> Query Filter: Including by constraints tags contain=LintQ.
+[2026-05-07 10:59:48] [SPAMMIER] resolve queries> Query Filter: /usr/local/codeql-home/LintQ/codeql/src/Backend/InitWithoutTranspilation.ql failed 'tags contain` constraint [correctness, reliability, qiskit]
+[2026-05-07 10:59:48] [SPAMMIER] resolve queries> Query Filter: /usr/local/codeql-home/LintQ/codeql/src/Backend/MeasWithStatevector.ql failed 'tags contain` constraint [correctness, reliability, qiskit]
+[2026-05-07 10:59:48] [SPAMMIER] resolve queries> Query Filter: /usr/local/codeql-home/LintQ/codeql/src/Extra/DeprecatedCircuitMethod.ql failed 'tags contain` constraint [correctness, reliability, qiskit]
+[2026-05-07 10:59:48] [SPAMMY] resolve queries> Query Filter: Including /usr/local/codeql-home/LintQ/codeql/src/Extra/DeprecatedIdentity.ql.
+[2026-05-07 10:59:48] [SPAMMIER] resolve queries> Query Filter: /usr/local/codeql-home/LintQ/codeql/src/Extra/ExecuteWithSeed.ql failed 'tags contain` constraint [correctness, reliability, qiskit]
+[2026-05-07 10:59:48] [SPAMMIER] resolve queries> Query Filter: /usr/local/codeql-home/LintQ/codeql/src/Extra/GhostQASMImport.ql failed 'tags contain` constraint [correctness, reliability, qiskit]
+[2026-05-07 10:59:48] [SPAMMIER] resolve queries> Query Filter: /usr/local/codeql-home/LintQ/codeql/src/Extra/ImproperDraw.ql failed 'tags contain` constraint [correctness, reliability, qiskit]
+[2026-05-07 10:59:48] [SPAMMIER] resolve queries> Query Filter: /usr/local/codeql-home/LintQ/codeql/src/Extra/MultipleSubmission.ql failed 'tags contain` constraint [correctness, reliability, qiskit]
+[2026-05-07 10:59:48] [SPAMMIER] resolve queries> Query Filter: /usr/local/codeql-home/LintQ/codeql/src/Extra/SimulatorSizeOverflow.ql failed 'tags contain` constraint [correctness, reliability, qiskit]
+[2026-05-07 10:59:48] [SPAMMIER] resolve queries> Query Filter: /usr/local/codeql-home/LintQ/codeql/src/Extra/SuperfluousOp.ql failed 'tags contain` constraint [correctness, reliability, qiskit]
+[2026-05-07 10:59:48] [SPAMMIER] resolve queries> Query Filter: /usr/local/codeql-home/LintQ/codeql/src/Extra/SuperfluousOpPrecise.ql failed 'tags contain` constraint [correctness, reliability, qiskit]
+[2026-05-07 10:59:48] [SPAMMIER] resolve queries> Query Filter: /usr/local/codeql-home/LintQ/codeql/src/Extra/TranspileWithoutLayout.ql failed 'tags contain` constraint [correctness, reliability, qiskit]
+[2026-05-07 10:59:48] [SPAMMY] resolve queries> Query Filter: Including /usr/local/codeql-home/LintQ/codeql/src/Interconnection/GhostComposition.ql.
+[2026-05-07 10:59:48] [SPAMMIER] resolve queries> Query Filter: /usr/local/codeql-home/LintQ/codeql/src/Interconnection/GhostFromQasm.ql failed 'tags contain` constraint [correctness, reliability, qiskit]
+[2026-05-07 10:59:48] [SPAMMIER] resolve queries> Query Filter: /usr/local/codeql-home/LintQ/codeql/src/Interconnection/IncompatibleComposition.ql failed 'tags contain` constraint [correctness, reliability, qiskit]
+[2026-05-07 10:59:48] [SPAMMIER] resolve queries> Query Filter: /usr/local/codeql-home/LintQ/codeql/src/Interconnection/UngovernedComposition.ql failed 'tags contain` constraint [maintainability, recommendation, qiskit]
+[2026-05-07 10:59:48] [SPAMMY] resolve queries> Query Filter: Including /usr/local/codeql-home/LintQ/codeql/src/Measurement/ConditionalGateWithoutMeas.ql.
+[2026-05-07 10:59:48] [SPAMMY] resolve queries> Query Filter: Including /usr/local/codeql-home/LintQ/codeql/src/Measurement/DoubleMeasurement.ql.
+[2026-05-07 10:59:48] [SPAMMY] resolve queries> Query Filter: Including /usr/local/codeql-home/LintQ/codeql/src/Measurement/MeasureAll.ql.
+[2026-05-07 10:59:48] [SPAMMY] resolve queries> Query Filter: Including /usr/local/codeql-home/LintQ/codeql/src/Measurement/OpAfterMeasurement.ql.
+[2026-05-07 10:59:48] [SPAMMIER] resolve queries> Query Filter: /usr/local/codeql-home/LintQ/codeql/src/Measurement/OpAfterMeasurementGeneral.ql failed 'tags contain` constraint [correctness, reliability, qiskit]
+[2026-05-07 10:59:48] [SPAMMIER] resolve queries> Query Filter: /usr/local/codeql-home/LintQ/codeql/src/Metrics/CircuitSize.ql failed 'tags contain` constraint [correctness, reliability, qiskit]
+[2026-05-07 10:59:48] [SPAMMY] resolve queries> Query Filter: Including /usr/local/codeql-home/LintQ/codeql/src/Optimization/OpAfterOptimization.ql.
+[2026-05-07 10:59:48] [SPAMMIER] resolve queries> Query Filter: /usr/local/codeql-home/LintQ/codeql/src/Qsmell/NoAlignmentLogicalPhysical.ql failed 'tags contain` constraint [maintainability, efficiency, qiskit]
+[2026-05-07 10:59:48] [SPAMMIER] resolve queries> Query Filter: /usr/local/codeql-home/LintQ/codeql/src/Qsmell/NonParametrizedCircuit.ql failed 'tags contain` constraint [maintainability, efficiency, qiskit]
+[2026-05-07 10:59:48] [SPAMMY] resolve queries> Query Filter: Including /usr/local/codeql-home/LintQ/codeql/src/Resource/ConstantClassicBit.ql.
+[2026-05-07 10:59:48] [SPAMMY] resolve queries> Query Filter: Including /usr/local/codeql-home/LintQ/codeql/src/Resource/OversizedCircuit.ql.
+[2026-05-07 10:59:48] [SPAMMY] resolve queries> Query Filter: Including /usr/local/codeql-home/LintQ/codeql/src/Resource/UnmeasurableQubits.ql.
+[2026-05-07 10:59:48] [SPAMMIER] resolve queries> Query Filter: /usr/local/codeql-home/LintQ/codeql/src/Simulation/InvalidPauliErrorSize.ql failed 'tags contain` constraint [correctness, reliability, qiskit]
+[2026-05-07 10:59:48] [SPAMMIER] resolve queries> Query Filter: /usr/local/codeql-home/LintQ/codeql/src/Simulation/InvalidPauliSyntaxError.ql failed 'tags contain` constraint [correctness, reliability, qiskit]
+[2026-05-07 10:59:48] [SPAMMIER] resolve queries> Query Filter: /usr/local/codeql-home/LintQ/codeql/src/Vulnerability/TokenLeakage.ql failed 'tags contain` constraint [security, qiskit]
+[2026-05-07 10:59:48] [DETAILS] resolve queries> Got 10 queries from /home/codeql/project/LintQ-all.qls.
+[2026-05-07 10:59:48] Plumbing command codeql resolve queries completed:
+                      [
+                        "/usr/local/codeql-home/LintQ/codeql/src/Extra/DeprecatedIdentity.ql",
+                        "/usr/local/codeql-home/LintQ/codeql/src/Interconnection/GhostComposition.ql",
+                        "/usr/local/codeql-home/LintQ/codeql/src/Measurement/ConditionalGateWithoutMeas.ql",
+                        "/usr/local/codeql-home/LintQ/codeql/src/Measurement/DoubleMeasurement.ql",
+                        "/usr/local/codeql-home/LintQ/codeql/src/Measurement/MeasureAll.ql",
+                        "/usr/local/codeql-home/LintQ/codeql/src/Measurement/OpAfterMeasurement.ql",
+                        "/usr/local/codeql-home/LintQ/codeql/src/Optimization/OpAfterOptimization.ql",
+                        "/usr/local/codeql-home/LintQ/codeql/src/Resource/ConstantClassicBit.ql",
+                        "/usr/local/codeql-home/LintQ/codeql/src/Resource/OversizedCircuit.ql",
+                        "/usr/local/codeql-home/LintQ/codeql/src/Resource/UnmeasurableQubits.ql"
+                      ]
+[2026-05-07 10:59:48] Creating executor with 10 threads.
+[2026-05-07 10:59:51] Calling plumbing command: codeql resolve extensions --qlconfig-file=/home/codeql/project/qlconfig.yml --insecurely-execute-ml-model-checksums= /home/codeql/project/LintQ-all.qls
+[2026-05-07 10:59:51] Calling plumbing command: codeql resolve queries --qlconfig-file=/home/codeql/project/qlconfig.yml --format startingpacks -- /home/codeql/project/LintQ-all.qls
