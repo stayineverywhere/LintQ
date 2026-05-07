@@ -1,6 +1,6 @@
 from qiskit import QuantumCircuit
 
-qc = QuantumCircuit(3, 2)  # classical bit 2개로 변경
+qc = QuantumCircuit(3, 3)  # classical bit 3개로 변경
 qc.x(0)
 qc.cx(0, 2)
 qc.cx(2, 1)
